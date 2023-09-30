@@ -1,0 +1,30 @@
+.input_underline {
+    height:20px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 0;
+    width: 100%;
+    box-shadow: -8px 10px 0 -7px #ebebeb, 8px 10px 0 -7px #ebebeb;
+    -webkit-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+    font-size: 20px;
+}
+
+.input_underline:focus {
+    outline: none;
+    box-shadow: -8px 10px 0 -7px #0c2461, 8px 10px 0 -7px #0c2461;
+}
+
+.error-message {
+    color: red;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.title_input {
+    font-size: 20px;
+    color: #0c2461;
+    font-weight: bold;
+}
+
+
