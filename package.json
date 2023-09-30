@@ -9,11 +9,16 @@
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy" : "gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.46.2",
+    "react-phone-input-2": "^2.15.1",
+    "react-redux": "^8.1.2",
+    "validator": "^13.11.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",
