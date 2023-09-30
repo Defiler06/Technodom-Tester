@@ -1,16 +1,17 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
+import IRegister from "../interfaces/IRegister.ts";
 
 interface State {
-    user: IRegisterSlice;
+    user: IRegister
 }
 
 const initialState: State = {
-    user : {
+    user: {
         username: '',
         phone: '+7',
         email: '',
         isCheck: false,
-    }
+    },
 };
 
 const RegisterSlice = createSlice({
@@ -36,6 +37,6 @@ export const {
     changeUsername,
     changePhone,
     changeEmail,
-    changeCheckBox
+    changeCheckBox,
 } = RegisterSlice.actions;
 export default RegisterSlice.reducer;

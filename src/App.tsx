@@ -1,12 +1,21 @@
-import FormRegister from "./containers/FormRegister/FormRegister.tsx";
+import Register from "./containers/Auth/Register/Register.tsx";
+import Login from "./containers/Auth/Login/Login.tsx";
+import {useAppSelector} from "./store/hooks.ts";
+import RecoverPassword from "./containers/RecoverPassword/RecoverPassword.tsx";
 
 function App() {
+    const showRegisterForm = useAppSelector((state) => state.loginFields.showRegisterForm);
 
-  return (
-    <>
-        <FormRegister/>
-    </>
-  )
+
+    return (
+        <>
+            <div style={{display: "flex", alignItems: "center", justifyContent: "center", height: "100vh"}}>
+                <Login/>
+                {showRegisterForm && <Register/>}
+                <RecoverPassword/>
+            </div>
+        </>
+    )
 }
 
 export default App

@@ -7,7 +7,7 @@ interface IPropsInputForm {
     type?: string;
     placeholder: string;
     label: string;
-    error: string;
+    error?: string;
     onInputHandler: (e: FormEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => void;
 }
 
