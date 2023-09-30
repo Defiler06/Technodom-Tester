@@ -1,0 +1,25 @@
+.button_submit {
+    width: 50%;
+    align-self: center;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #0c2461;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+}
+
+.button_submit:hover {
+    background-color: #1e3799;
+}
+
+.button_submit:disabled {
+    background-color: #cccccc; /* Цвет фона для отключенной кнопки */
+    cursor: not-allowed; /* Изменение курсора для недоступной кнопки */
+}
