@@ -20,6 +20,6 @@
 }
 
 .button_submit:disabled {
-    background-color: #cccccc; /* Цвет фона для отключенной кнопки */
-    cursor: not-allowed; /* Изменение курсора для недоступной кнопки */
+    background-color: #cccccc;
+    cursor: not-allowed;
 }
